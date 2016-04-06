@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Rate Tattoos</string>
+    <string name="login">Fazer Login</string>
+    <string name="nomeusuario">Nome de usuário</string>
+    <string name="pass">Senha</string>
+    <string name="registro">Registrar</string>
+</resources>
