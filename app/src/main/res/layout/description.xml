@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.example.android.ratetattoo.Description">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <ImageView
+        android:id="@+id/iv_shop"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_shop_1"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardBackgroundColor="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_n_shop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/n_shop_1"
+                android:textSize="21sp"
+                android:textColor="@color/primary_text"
+                android:textStyle="bold"
+                android:paddingBottom="24dp"/>
+
+            <TextView
+                android:id="@+id/tv_a_shop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/e_shop_1"
+                android:paddingBottom="12dp"
+                android:textColor="@color/primary_light"/>
+
+
+            <TextView
+                android:id="@+id/tv_p_shop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/p_shop_1"
+                android:paddingBottom="20dp"
+                android:textColor="@color/primary_light"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mapa"
+                android:paddingBottom="8dp"
+                android:paddingTop="16dp"
+                android:background="@color/colorAccent"
+                android:textColor="@color/primary_light"/>
+
+
+        </LinearLayout>
+
+</android.support.v7.widget.CardView>
+
+</LinearLayout>
