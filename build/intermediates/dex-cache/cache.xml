@@ -1,3 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="C:\Users\Desktop\Documents\GitHub\RateTattoo\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="3be474b1b21b31cf2fa93fe6bd641ae108d96452">
+        <dex dex="C:\Users\Desktop\Documents\GitHub\RateTattoo\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.2.1_f25afd078d08f9bd635677346200fb5c05f789b0.jar" />
+    </item>
+    <item
+        jar="C:\Users\Desktop\Documents\GitHub\RateTattoo\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="3469cb457f10f74c28cbc05f069b6c894f6cbdd0">
+        <dex dex="C:\Users\Desktop\Documents\GitHub\RateTattoo\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.2.1_626c0ea5ba060ba8de6fdd28ed37218f166d7c01.jar" />
+    </item>
+    <item
+        jar="C:\Users\Desktop\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.2.1\support-annotations-23.2.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="ccb693bc0774fcb637246f7360de25b4af7df318">
+        <dex dex="C:\Users\Desktop\Documents\GitHub\RateTattoo\app\build\intermediates\pre-dexed\debug\support-annotations-23.2.1_c4d10c9ab4c26e145a0e8b95d486d2e4bd73c833.jar" />
+    </item>
+    <item
+        jar="C:\Users\Desktop\Documents\GitHub\RateTattoo\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="673d77a5bbddd766037f088e775df525c46407f0">
+        <dex dex="C:\Users\Desktop\Documents\GitHub\RateTattoo\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.2.1_01e84fad853d2c105024be5d58b497039017c4fc.jar" />
+    </item>
+    <item
+        jar="C:\Users\Desktop\Documents\GitHub\RateTattoo\app\build\intermediates\exploded-aar\com.android.support\design\23.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="72961d8b453b46e277702f18de9d210bc019e36e">
+        <dex dex="C:\Users\Desktop\Documents\GitHub\RateTattoo\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.2.1_29c58ee235d268369c2c57d7b74f781587b89c05.jar" />
+    </item>
+    <item
+        jar="C:\Users\Desktop\Documents\GitHub\RateTattoo\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="e4d0cbb0b999604b349062f0214a0a228a7fd151">
+        <dex dex="C:\Users\Desktop\Documents\GitHub\RateTattoo\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.2.1_dc072f99642975e89b1695bfa92d13e885eceb32.jar" />
+    </item>
+    <item
+        jar="C:\Users\Desktop\.gradle\caches\modules-2\files-2.1\io.realm\realm-annotations\0.88.2\62142d422aaf1a4619035612aaa396df63bbf974\realm-annotations-0.88.2.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="62142d422aaf1a4619035612aaa396df63bbf974">
+        <dex dex="C:\Users\Desktop\Documents\GitHub\RateTattoo\app\build\intermediates\pre-dexed\debug\realm-annotations-0.88.2_0ef2046588a2428a251bab537b72c11a67fb40c0.jar" />
+    </item>
+    <item
+        jar="C:\Users\Desktop\Documents\GitHub\RateTattoo\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\jars\libs\internal_impl-23.2.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="607a3d0b8013b4ccbfeb0b7cb293351994e021fb">
+        <dex dex="C:\Users\Desktop\Documents\GitHub\RateTattoo\app\build\intermediates\pre-dexed\debug\internal_impl-23.2.1_f0ac53e4e0299f4ab7aaef76be33b9c6226774ee.jar" />
+    </item>
+    <item
+        jar="C:\Users\Desktop\Documents\GitHub\RateTattoo\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="e3885783ff8926ed9e2fdcd16816c2e1e73e7aee">
+        <dex dex="C:\Users\Desktop\Documents\GitHub\RateTattoo\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.2.1_dd8625e53c4c98cf93e1b85de397604ac4c22d81.jar" />
+    </item>
+    <item
+        jar="C:\Users\Desktop\Documents\GitHub\RateTattoo\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="cb86970df0f0f25f766d320b279c7858c1ca0003">
+        <dex dex="C:\Users\Desktop\Documents\GitHub\RateTattoo\app\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-23.2.1_d102d8d1ab38fc4a359cdd46d0118a34a404c783.jar" />
+    </item>
+    <item
+        jar="C:\Users\Desktop\Documents\GitHub\RateTattoo\app\build\intermediates\exploded-aar\io.realm\realm-android-library\0.88.2\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="43ae35fb2ebd6bac5b6fb4d041c94a35a34dbfc0">
+        <dex dex="C:\Users\Desktop\Documents\GitHub\RateTattoo\app\build\intermediates\pre-dexed\debug\io.realm-realm-android-library-0.88.2_9b4e5bdcfae5ea24d591e54576dcc9edfceec1a0.jar" />
+    </item>
+
+</items>

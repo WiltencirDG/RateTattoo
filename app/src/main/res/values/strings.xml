@@ -3,5 +3,9 @@
     <string name="login">Fazer Login</string>
     <string name="nomeusuario">Nome de usuário</string>
     <string name="pass">Senha</string>
+    <string name="confpass">Confirme a senha</string>
     <string name="registro">Registrar</string>
+    <string name="jatem">Já tem uma conta?</string>
+    <string name="jlogin">Login</string>
+    <string name="email">Email</string>
 </resources>
