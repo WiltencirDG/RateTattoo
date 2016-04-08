@@ -4,24 +4,25 @@
     android:versionCode="1"
     android:versionName="1.0.0">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/logo"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
-
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
         <activity android:name=".Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-        <activity android:name=".Dashboard"/>
-        <activity android:name=".Registration"/>
-        <activity android:name=".Description"/>
+        <activity android:name=".Dashboard" />
+        <activity android:name=".Registration" />
+        <activity android:name=".Description" />
+        <activity android:name=".RegisterRequest"/>
     </application>
 
 </manifest>

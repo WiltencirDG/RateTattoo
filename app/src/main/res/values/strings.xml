@@ -9,9 +9,21 @@
     <string name="jlogin">Login</string>
     <string name="email">Email</string>
     <string name="mapa">Mapa</string>
+    <string name="regfail">Registro falhou</string>
+    <string name="tentenov">Tente novamente</string>
+
+    <string name="erro_email">Email vazio</string>
+    <string name="erro_username">Usuario invalido</string>
+    <string name="erro_senha">Coloque uma senha</string>
+    <string name="erro_conf">Confirme a senha</string>
+
 
     <string name="n_shop_1">Raul Tattoo Studio</string>
     <string name="e_shop_1">R. Pedro Gusso, 4127</string>
     <string name="p_shop_1">(41) 8871-9176</string>
+
+    <string name="n_shop_2">Donn Lopes Tattoo</string>
+    <string name="e_shop_2">Rua Antônio de Oliveira Santos, 14</string>
+    <string name="p_shop_2">(41) 9876-8785</string>
 
 </resources>

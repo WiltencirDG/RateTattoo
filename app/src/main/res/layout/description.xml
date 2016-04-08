@@ -61,7 +61,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/mapa"
                 android:paddingBottom="8dp"
-                android:paddingTop="16dp"
+                android:paddingTop="8dp"
                 android:background="@color/colorAccent"
                 android:textColor="@color/primary_light"/>
 

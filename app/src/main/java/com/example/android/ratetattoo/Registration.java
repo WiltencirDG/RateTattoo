@@ -1,11 +1,19 @@
 package com.example.android.ratetattoo;
 
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.toolbox.Volley;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 
 public class Registration extends AppCompatActivity {
@@ -38,13 +46,39 @@ public class Registration extends AppCompatActivity {
         btnRegistrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String email = etEmail.getText().toString();
-                String name = etUsuario.getText().toString();
-                String senha = etSenha.getText().toString();
-                String confsenha = etConfSenha.getText().toString();
-                if (validateDados(email, name, senha, confsenha)) {
+                final String email = etEmail.getText().toString();
+                final String username = etUsuario.getText().toString();
+                final String senha = etSenha.getText().toString();
+                final String confsenha = etConfSenha.getText().toString();
+                if (validateDados(email, username, senha, confsenha)) {
                     if (validateSenha(senha, confsenha)) {
-                        backToLogin();
+
+                        Response.Listener<String> responseListener = new Response.Listener<String>(){
+
+                            @Override
+                            public void onResponse(String response) {
+                                try {
+                                    JSONObject jsonResponse = new JSONObject(response);
+                                    boolean success = jsonResponse.getBoolean("success");
+
+                                    if (success){
+                                        backToLogin();
+                                    }else {
+                                        AlertDialog.Builder builder = new AlertDialog.Builder(Registration.this);
+                                        builder.setMessage(R.string.regfail)
+                                                .setNegativeButton(R.string.tentenov, null)
+                                                .create()
+                                                .show();
+                                    }
+                                } catch (JSONException e) {
+                                    e.printStackTrace();
+                                }
+                            }
+                        }
+
+                        RegisterRequest registerRequest = new RegisterRequest(username, email, senha, responseListener);
+                        RequestQueue queue = Volley.newRequestQueue(Registration.this);
+                        queue.add(registerRequest);
                     }
                 }
             }
@@ -58,15 +92,15 @@ public class Registration extends AppCompatActivity {
         });
     }
 
-    private boolean validateDados(String email, String name, String senha, String confsenha){
+    private boolean validateDados(String email, String username, String senha, String confsenha){
         etEmail.setError(null);
         etUsuario.setError(null);
         etSenha.setError(null);
         etConfSenha.setError(null);
 
         if(email.isEmpty()){
-            etEmail.setError("Email vazio.");}
-        if(name.isEmpty()){
+            etEmail.setError("Email vazio");}
+        if(username.isEmpty()){
             etUsuario.setError("Usuário inválido.");}
         if(senha.isEmpty()){
             etSenha.setError("Coloque uma senha.");}
@@ -77,18 +111,19 @@ public class Registration extends AppCompatActivity {
             return true;}
     }
 
-    private void backToLogin(){
-        Intent scrlogin = new Intent(Registration.this, Login.class);
-        startActivity(scrlogin);
-    }
     private boolean validateSenha(String senha, String confsenha){
         if (senha.equals(confsenha)){
             return true;
-        }
-        else{
+        }else{
             etConfSenha.setError("As senhas não são iguais.");
             return false;
         }
 
     }
+
+    private void backToLogin(){
+        Intent scrlogin = new Intent(Registration.this, Login.class);
+        startActivity(scrlogin);
+    }
+
 }

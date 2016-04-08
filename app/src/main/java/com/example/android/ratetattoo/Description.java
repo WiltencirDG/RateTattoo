@@ -44,6 +44,14 @@ public class Description extends AppCompatActivity{
                 address = getString(R.string.e_shop_1);
                 phone = getString(R.string.p_shop_1);
                 break;
+
+            case R.id.cv_shop_2:
+                image = R.drawable.img_shop_2;
+                name = getString(R.string.n_shop_2);
+                address = getString(R.string.e_shop_2);
+                phone = getString(R.string.p_shop_2);
+                break;
+
         }
 
         ivImage.setImageResource(image);

@@ -9,6 +9,7 @@ import android.view.View;
 public class Dashboard extends AppCompatActivity {
 
     private CardView cvShop1;
+    private CardView cvShop2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +22,7 @@ public class Dashboard extends AppCompatActivity {
 
     private void setUI(){
         cvShop1 = (CardView) findViewById(R.id.cv_shop_1);
-
+        cvShop2 = (CardView) findViewById(R.id.cv_shop_2);
     }
 
     private void setAct(){
@@ -29,6 +30,13 @@ public class Dashboard extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 desc(R.id.cv_shop_1);
+            }
+        });
+
+        cvShop2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                desc(R.id.cv_shop_2);
             }
         });
 
