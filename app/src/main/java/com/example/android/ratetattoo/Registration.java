@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -18,6 +19,7 @@ import org.json.JSONObject;
 
 public class Registration extends AppCompatActivity {
 
+    private static String TAG = "Resposta";
     private EditText etEmail;
     private EditText etUsuario;
     private EditText etSenha;
@@ -62,6 +64,7 @@ public class Registration extends AppCompatActivity {
                                     boolean success = jsonResponse.getBoolean("success");
 
                                     if (success){
+                                        Log.i(TAG,"Resp: " + success);
                                         backToLogin();
                                     }else {
                                         AlertDialog.Builder builder = new AlertDialog.Builder(Registration.this);
@@ -69,12 +72,13 @@ public class Registration extends AppCompatActivity {
                                                 .setNegativeButton(R.string.tentenov, null)
                                                 .create()
                                                 .show();
+                                        Log.i(TAG, "Resp: " + success);
                                     }
                                 } catch (JSONException e) {
                                     e.printStackTrace();
                                 }
                             }
-                        }
+                        };
 
                         RegisterRequest registerRequest = new RegisterRequest(username, email, senha, responseListener);
                         RequestQueue queue = Volley.newRequestQueue(Registration.this);

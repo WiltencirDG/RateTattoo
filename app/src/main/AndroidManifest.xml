@@ -22,7 +22,6 @@
         <activity android:name=".Dashboard" />
         <activity android:name=".Registration" />
         <activity android:name=".Description" />
-        <activity android:name=".RegisterRequest"/>
     </application>
 
 </manifest>
