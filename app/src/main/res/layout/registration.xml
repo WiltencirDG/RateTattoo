@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
+    android:background="@color/colorBack"
     tools:context="com.example.android.ratetattoo.Registration">
 
     <LinearLayout
@@ -21,7 +21,7 @@
             android:inputType="textEmailAddress"
             android:singleLine="true"
             android:hint="@string/email"
-            android:textColorHint="@color/primary_light"
+            android:textColorHint="@color/colorSecondaryText"
             android:layout_marginBottom="10dp"
             android:textSize="16sp"/>
 
@@ -32,7 +32,7 @@
             android:inputType="text"
             android:singleLine="true"
             android:hint="@string/nomeusuario"
-            android:textColorHint="@color/primary_light"
+            android:textColorHint="@color/colorSecondaryText"
             android:layout_marginBottom="10dp"
             android:textSize="16sp"/>
 
@@ -43,7 +43,7 @@
             android:inputType="textPassword"
             android:singleLine="true"
             android:hint="@string/pass"
-            android:textColorHint="@color/primary_light"
+            android:textColorHint="@color/colorSecondaryText"
             android:layout_marginBottom="10dp"
             android:textSize="16sp"/>
 
@@ -55,7 +55,7 @@
             android:inputType="textPassword"
             android:singleLine="true"
             android:hint="@string/confpass"
-            android:textColorHint="@color/primary_light"
+            android:textColorHint="@color/colorSecondaryText"
             android:layout_marginBottom="10dp"
             android:textSize="16sp"/>
 
@@ -69,8 +69,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/registro"
+                android:textColor="@color/colorWhite"
                 android:textSize="14sp"
-                android:layout_above="@+id/tvRegistrado"/>
+                android:layout_above="@+id/tvRegistrado"
+                android:background="@color/colorAccent"/>
 
             <TextView
                 android:id="@+id/tvRegistrado"
@@ -78,7 +80,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/jatem"
                 android:layout_above="@+id/LogButton"
-                android:textColor="@color/primary_light"
+                android:textColor="@color/colorPrimaryText"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"/>
@@ -88,6 +90,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/jlogin"
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorAccent"
                 android:textSize="14sp"
                 android:layout_alignParentBottom="true"/>
 

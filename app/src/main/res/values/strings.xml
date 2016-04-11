@@ -10,7 +10,9 @@
     <string name="email">Email</string>
     <string name="mapa">Mapa</string>
     <string name="regfail">Registro falhou</string>
+    <string name="logfail">Login falhou</string>
     <string name="tentenov">Tente novamente</string>
+    <string name="bemvindo">Bem Vindo</string>
 
     <string name="erro_email">Email vazio</string>
     <string name="erro_username">Usuario invalido</string>

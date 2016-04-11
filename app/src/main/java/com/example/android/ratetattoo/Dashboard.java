@@ -5,9 +5,12 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.view.View;
+import android.widget.TextView;
+
 
 public class Dashboard extends AppCompatActivity {
 
+    private TextView bvMsg;
     private CardView cvShop1;
     private CardView cvShop2;
 
@@ -18,9 +21,11 @@ public class Dashboard extends AppCompatActivity {
 
         setUI();
         setAct();
+        getData();
     }
 
     private void setUI(){
+        bvMsg = (TextView) findViewById(R.id.bvMsg);
         cvShop1 = (CardView) findViewById(R.id.cv_shop_1);
         cvShop2 = (CardView) findViewById(R.id.cv_shop_2);
     }
@@ -47,6 +52,14 @@ public class Dashboard extends AppCompatActivity {
         intent.putExtra("id", id);
         startActivity(intent);
 
+    }
+
+    private void getData(){
+        Intent intent = getIntent();
+        String username = intent.getStringExtra("username");
+
+        String message = "Bem vindo, " + username;
+        bvMsg.setText(message);
     }
 }
 

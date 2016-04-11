@@ -4,7 +4,6 @@ import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -19,7 +18,6 @@ import org.json.JSONObject;
 
 public class Registration extends AppCompatActivity {
 
-    private static String TAG = "Resposta";
     private EditText etEmail;
     private EditText etUsuario;
     private EditText etSenha;
@@ -55,7 +53,7 @@ public class Registration extends AppCompatActivity {
                 if (validateDados(email, username, senha, confsenha)) {
                     if (validateSenha(senha, confsenha)) {
 
-                        Response.Listener<String> responseListener = new Response.Listener<String>(){
+                        Response.Listener<String> responseListener = new Response.Listener<String>() {
 
                             @Override
                             public void onResponse(String response) {
@@ -63,16 +61,16 @@ public class Registration extends AppCompatActivity {
                                     JSONObject jsonResponse = new JSONObject(response);
                                     boolean success = jsonResponse.getBoolean("success");
 
-                                    if (success){
-                                        Log.i(TAG,"Resp: " + success);
-                                        backToLogin();
-                                    }else {
+                                    if (success) {
+                                        Intent intent = new Intent(Registration.this, Login.class);
+                                        Registration.this.startActivity(intent);
+
+                                    } else {
                                         AlertDialog.Builder builder = new AlertDialog.Builder(Registration.this);
                                         builder.setMessage(R.string.regfail)
                                                 .setNegativeButton(R.string.tentenov, null)
                                                 .create()
                                                 .show();
-                                        Log.i(TAG, "Resp: " + success);
                                     }
                                 } catch (JSONException e) {
                                     e.printStackTrace();
@@ -91,7 +89,8 @@ public class Registration extends AppCompatActivity {
         btnGoLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                backToLogin();
+                Intent intent = new Intent(Registration.this, Login.class);
+                Registration.this.startActivity(intent);
             }
         });
     }
@@ -125,9 +124,5 @@ public class Registration extends AppCompatActivity {
 
     }
 
-    private void backToLogin(){
-        Intent scrlogin = new Intent(Registration.this, Login.class);
-        startActivity(scrlogin);
-    }
 
 }

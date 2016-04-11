@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
+    android:background="@color/colorBack"
     tools:context="com.example.android.ratetattoo.Description">
 
     <ImageView
@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         card_view:cardCornerRadius="4dp"
-        card_view:cardBackgroundColor="@color/colorPrimary">
+        card_view:cardBackgroundColor="@color/colorWhite">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -35,7 +35,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/n_shop_1"
                 android:textSize="21sp"
-                android:textColor="@color/primary_text"
+                android:textColor="@color/colorPrimaryText"
                 android:textStyle="bold"
                 android:paddingBottom="24dp"/>
 
@@ -45,7 +45,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/e_shop_1"
                 android:paddingBottom="12dp"
-                android:textColor="@color/primary_light"/>
+                android:textColor="@color/colorSecondaryText"/>
 
 
             <TextView
@@ -54,7 +54,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/p_shop_1"
                 android:paddingBottom="20dp"
-                android:textColor="@color/primary_light"/>
+                android:textColor="@color/colorSecondaryText"/>
 
             <Button
                 android:layout_width="match_parent"
@@ -63,7 +63,7 @@
                 android:paddingBottom="8dp"
                 android:paddingTop="8dp"
                 android:background="@color/colorAccent"
-                android:textColor="@color/primary_light"/>
+                android:textColor="@color/colorWhite"/>
 
 
         </LinearLayout>
