@@ -42,7 +42,9 @@ public class Login extends AppCompatActivity {
                 final String username = etName.getText().toString();
                 final String password = etSenha.getText().toString();
 
-                Response.Listener<String> responseListener = new Response.Listener<String>(){
+                if (validateData(username, password)) {
+
+                Response.Listener<String> responseListener = new Response.Listener<String>() {
 
                     @Override
                     public void onResponse(String response) {
@@ -51,7 +53,7 @@ public class Login extends AppCompatActivity {
                             JSONObject jsonResponse = new JSONObject(response);
                             boolean success = jsonResponse.getBoolean("success");
 
-                            if (success){
+                            if (success) {
                                 String username = jsonResponse.getString("username");
 
 
@@ -60,8 +62,7 @@ public class Login extends AppCompatActivity {
                                 Login.this.startActivity(intent);
 
 
-
-                            }else{
+                            } else {
                                 AlertDialog.Builder builder = new AlertDialog.Builder(Login.this);
                                 builder.setMessage(R.string.logfail)
                                         .setNegativeButton(R.string.tentenov, null)
@@ -82,6 +83,7 @@ public class Login extends AppCompatActivity {
                 RequestQueue queue = Volley.newRequestQueue(Login.this);
                 queue.add(loginRequest);
             }
+        }
         });
 
         tvRegister.setOnClickListener(new View.OnClickListener(){
@@ -95,15 +97,15 @@ public class Login extends AppCompatActivity {
 
     }
 
-    private boolean validateData(String name,String senha){
+    private boolean validateData(String username,String password){
         etName.setError(null);
         etSenha.setError(null);
 
-        if(name.isEmpty()){
+        if(username.isEmpty()){
             etName.setError("Usuário não existe");
             return false;
         }
-        if (senha.isEmpty()) {
+        if (password.isEmpty()) {
             etSenha.setError("Digite sua senha");
             return false;
         }else{
@@ -115,12 +117,6 @@ public class Login extends AppCompatActivity {
         etName = (EditText) findViewById(R.id.EtName);
         etSenha = (EditText) findViewById(R.id.EtSenha);
         tvRegister = (TextView) findViewById(R.id.Register);
-    }
-
-    private void goToDash(String name){
-        Intent logdash = new Intent(Login.this, Dashboard.class);
-        logdash.putExtra("name", name);
-        startActivity(logdash);
     }
 
 }

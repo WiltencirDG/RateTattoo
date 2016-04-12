@@ -12,6 +12,7 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.toolbox.Volley;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -26,8 +27,8 @@ public class Registration extends AppCompatActivity {
     private Button btnGoLogin;
 
     @Override
-    protected void onCreate(Bundle saveInstanceState){
-        super.onCreate(saveInstanceState);
+    protected void onCreate(Bundle savedInstanceState){
+        super.onCreate(savedInstanceState);
         setContentView(R.layout.registration);
         setUI();
         Act();
@@ -50,10 +51,10 @@ public class Registration extends AppCompatActivity {
                 final String username = etUsuario.getText().toString();
                 final String senha = etSenha.getText().toString();
                 final String confsenha = etConfSenha.getText().toString();
-                if (validateDados(email, username, senha, confsenha)) {
+                if (validateDados(email, username, senha, confsenha))
                     if (validateSenha(senha, confsenha)) {
 
-                        Response.Listener<String> responseListener = new Response.Listener<String>() {
+                        final Response.Listener<String> responseListener = new Response.Listener<String>() {
 
                             @Override
                             public void onResponse(String response) {
@@ -82,7 +83,6 @@ public class Registration extends AppCompatActivity {
                         RequestQueue queue = Volley.newRequestQueue(Registration.this);
                         queue.add(registerRequest);
                     }
-                }
             }
         });
 
