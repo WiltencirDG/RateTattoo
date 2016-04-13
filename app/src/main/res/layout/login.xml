@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/colorBack"
-    tools:context="com.example.android.ratetattoo.Login">
+    tools:context="br.com.wiltencirdg.ratetattoo.Login">
 
 
     <ImageView

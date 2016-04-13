@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorBack"
     android:orientation="vertical"
-    tools:context="com.example.android.ratetattoo.Dashboard">
+    tools:context="br.com.wiltencirdg.ratetattoo.Dashboard">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"

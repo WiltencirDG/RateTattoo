@@ -13,6 +13,12 @@
     <string name="logfail">Login falhou</string>
     <string name="tentenov">Tente novamente</string>
     <string name="bemvindo">Bem Vindo</string>
+    <string name="numvotos">Número de votos: 0</string>
+    <string name="btnvotar">Votar</string>
+    <string name="coments">Envie seu comentário</string>
+    <string name="send">Enviar</string>
+    <string name="ok">OK</string>
+    <string name="voted">Usuário já votou</string>
 
     <string name="erro_email">Email vazio</string>
     <string name="erro_username">Usuario invalido</string>
@@ -27,7 +33,23 @@
     <string name="n_shop_2">Donn Lopes Tattoo</string>
     <string name="e_shop_2">Rua Antônio de Oliveira Santos, 14</string>
     <string name="p_shop_2">(41) 9876 8785</string>
-    
-    <string name="google_maps_key">AIzaSyDUVju0FGwzrgMqpEMft8YSPlUcvDalmDI</string>
+
+    <string name="n_shop_3">Thiaguinho Studio</string>
+    <string name="e_shop_3">R. Mandirituba, 470</string>
+    <string name="p_shop_3">(41) 3086 1101</string>
+
+    <string name="n_shop_4">Jokers Tattoo e Piercing</string>
+    <string name="e_shop_4">Av. Pres. Getúlio Vargas, 1708</string>
+    <string name="p_shop_4">(41) 3223 5318</string>
+
+    <string name="n_shop_5">Tattoo Zasso</string>
+    <string name="e_shop_5">R. Visc. do Rio Branco, 1655</string>
+    <string name="p_shop_5">(41) 3029 4020</string>
+
+    <string name="n_shop_6">Marcio - Tattoo Studio</string>
+    <string name="e_shop_6">Rua Izaac Ferreira da Cruz, 3010</string>
+    <string name="p_shop_6">(41) 9992 9099</string>
+
+    <string name="google_maps_key">AIzaSyDUsoRaOgnLnNEqBYuom4MpWqAs4F2hCUI</string>
 
 </resources>

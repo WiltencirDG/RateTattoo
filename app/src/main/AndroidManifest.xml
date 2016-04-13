@@ -13,22 +13,22 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-        <activity android:name=".Login">
+        <activity android:name="br.com.wiltencirdg.ratetattoo.Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Dashboard" />
-        <activity android:name=".Registration" />
-        <activity android:name=".Description" />
+        <activity android:name="br.com.wiltencirdg.ratetattoo.Dashboard" />
+        <activity android:name="br.com.wiltencirdg.ratetattoo.Registration" />
+        <activity android:name="br.com.wiltencirdg.ratetattoo.Description" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key"/>
 
-        <activity android:name=".Maps"/>
+        <activity android:name="br.com.wiltencirdg.ratetattoo.Maps"/>
 
     </application>
 
