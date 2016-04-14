@@ -14,7 +14,7 @@ public class LoginRequest extends StringRequest {
         super(Method.POST, LOGIN_REQUEST_URL, listener, null);
         params = new HashMap<>();
         params.put("username", username);
-        params.put("password",password);
+        params.put("password", password);
     }
 
     @Override

@@ -1,6 +1,5 @@
 package br.com.wiltencirdg.ratetattoo;
 
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -9,7 +8,9 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
+
 import com.example.android.ratetattoo.R;
+
 
 public class Description extends AppCompatActivity{
     private ImageView ivImage;
@@ -18,9 +19,10 @@ public class Description extends AppCompatActivity{
     private TextView tvPhone;
     private GetStudios studios;
     private Button btnMap;
-    private Button btnRate;
-    private RatingBar ratingBar;
-    private TextView numVotos;
+    private ImageView ivToolbar;
+    private Button btnVote;
+    private RatingBar ratebar;
+
 
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -30,6 +32,7 @@ public class Description extends AppCompatActivity{
         setUI();
         setData(studios);
         setMap();
+        setToolbar();
     }
 
     private void setUI(){
@@ -38,9 +41,20 @@ public class Description extends AppCompatActivity{
         tvAddress = (TextView) findViewById(R.id.tv_a_shop);
         tvPhone = (TextView) findViewById(R.id.tv_p_shop);
         btnMap = (Button) findViewById(R.id.btn_map);
-        btnRate = (Button) findViewById(R.id.btn_votar);
-        ratingBar = (RatingBar) findViewById(R.id.ratebar);
-        numVotos = (TextView) findViewById(R.id.numvotos);
+        btnVote = (Button) findViewById(R.id.btn_votar);
+        ratebar = (RatingBar) findViewById(R.id.ratebar);
+    }
+
+    private void setToolbar(){
+        ivToolbar = (ImageView) findViewById(R.id.ic_tool);
+
+        ivToolbar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+
     }
 
     private void setData(GetStudios studios){
@@ -64,4 +78,5 @@ public class Description extends AppCompatActivity{
         intent.putExtra("studios", studios);
         startActivity(intent);
     }
+
 }

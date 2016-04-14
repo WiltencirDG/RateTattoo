@@ -1,6 +1,5 @@
 package br.com.wiltencirdg.ratetattoo;
 
-
 import com.android.volley.Response;
 import com.android.volley.toolbox.StringRequest;
 
@@ -8,7 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class RegisterRequest extends StringRequest{
-    private static final String REGISTER_REQUEST_URL = "http://ratetatto.comxa.com/Register.php";
+    private static final String REGISTER_REQUEST_URL = "http://ratetattoo.comxa.com/Register.php";
     private Map<String, String> params;
 
     public RegisterRequest(String username, String email, String password, Response.Listener<String> listener){
@@ -16,7 +15,7 @@ public class RegisterRequest extends StringRequest{
         params = new HashMap<>();
         params.put("username", username);
         params.put("email", email);
-        params.put("password",password);
+        params.put("password", password);
     }
 
     @Override

@@ -9,9 +9,19 @@
     tools:context="br.com.wiltencirdg.ratetattoo.Description">
 
     <android.support.v7.widget.Toolbar
+        android:id="@+id/destool"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/colorAccent"/>
+        android:background="@color/colorAccent">
+
+        <ImageView
+            android:id="@+id/ic_tool"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/toolbar_back"/>
+
+
+    </android.support.v7.widget.Toolbar>
 
     <ScrollView
         android:layout_width="match_parent"

@@ -12,7 +12,7 @@
     <string name="regfail">Registro falhou</string>
     <string name="logfail">Login falhou</string>
     <string name="tentenov">Tente novamente</string>
-    <string name="bemvindo">Bem Vindo</string>
+    <string name="bemvindo">Bem vindo,</string>
     <string name="numvotos">Número de votos: 0</string>
     <string name="btnvotar">Votar</string>
     <string name="coments">Envie seu comentário</string>
